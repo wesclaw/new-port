@@ -19,16 +19,15 @@
         </button>
         <div class="collapse navbar-collapse text-center" id="navbarNavAltMarkup">
           <div class="navbar-nav ms-auto">
-            <a class="nav-link active" aria-current="page" href="#">Home</a>
+            <!-- <a class="nav-link active" aria-current="page" href="#">Home</a> -->
             <a class="nav-link" href="#">Projects</a>
             <a class="nav-link" href="https://github.com/wesclaw"  target="_blank"><img src="images/github.png" class="github-icon"></a>
           </div>
         </div>
       </div>
     </nav>
-
     <section class="top" id="home">
-      <div class="container">
+      <div class="container home-section">
         <h2>Good morning, (name)</h2>
         <h1><span>From</span> School Teacher to Frontend Engineer</h1>
         <p>Hello, I'm Wesley Knudson, a former school teacher turned frontend engineer with a genuine passion for crafting responsive JavaScript applications. Transitioning from the world of education to the dynamic field of web development has been an exhilarating journey for me.</p>
@@ -41,38 +40,80 @@
       </div>
     </section>
 
+
+
     <section id="projects">
-      <div class="container projects-container">
+      <div class="container add-style">
         <h2 class="section-title">Projects</h2>
-        <div class="projects-list">
-          <div class="project">
-            <a href="https://www.freerecipemaker.com/" target="_blank">
-              <img src="images/Animation.gif" class="gif" loading="lazy">
-            </a>
-          </div>
-          <!-- <div class="live-code-btns">
-            <a href="">
-              <button>Live</button>
-            </a>
-            <a href="">
-              <button>Code</button>
-            </a>
-          </div> -->
-          <div class="project">
-            <a href="">
-              <img src="images/taskform.gif" class="gif" loading="lazy">
-            </a>       
+        <div class="line"></div>
+        <div class="project-flex-parent">
+          <div class="project1">
+            <div class="left-side">
+              <h4>Recipe Maker</h4>
+              <div>
+                <span class="html">html</span>
+                <span class="css">css</span>
+                <span class="js">javascript</span>
+                <span class="node">node</span>
+              </div>
+              <div class="line"></div>
+              <p>Used the OpenAI API to fetch a recipe based on user inputs. Users can freely add items by clicking on an ingredient or using the search field.</p>
+              <div class="a-tags">
+                <a href="" class="live-tag">Live</a>
+                <a href="" class="repo-tag">Repo</a>
+              </div>     
+            </div>
+            <div class="right-side">
+              <a href="">
+                <img src="images/Animation.gif" alt="" class="gif">
+              </a>
             </div>
           </div>
-          <div class="project">
-            <a href="">
-              <img src="images/Animation.gif" class="gif">
-            </a> 
+          <div class="project1 project2">
+            <div class="right-side">
+              <a href="">
+                <img src="images/multitaskform.gif" alt="" class="gif">
+              </a>
+            </div>
+            <div class="left-side">
+              <h4>Multi task form</h4>
+              <div>
+                <span class="html">html</span>
+                <span class="css">css</span>
+                <span class="js">javascript</span>
+              </div>
+              <div class="line"></div>
+              <p>A multi task form with 5 steps. User picks monthly or yearly subscription with special add-ons if wanted.</p>
+              <div class="a-tags">
+                <a href="" class="live-tag">Live</a>
+                <a href="" class="repo-tag">Repo</a>
+              </div>     
             </div>        
           </div>
         </div>
       </div>
     </section>
+
+
+
+
+    <section class="contact-me">
+      <div class="container add-style">
+        <h2 class="section-title" id="contact">Lets Build Together</h2>
+        <form action="">
+          <label for="fname">First Name</label>
+          <input type="text" id="fname" name="firstname" placeholder="Your name..">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" placeholder="Your email..">
+          <label for="subject">Subject</label>
+          <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+          <input type="submit" value="Submit">
+        </form>
+      </div>
+     </section>
+     <footer>
+        <p>&copy; 2024. All rights reserved.</p>
+     </footer>
 
    
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
@@ -80,3 +121,8 @@
     <script src="main.js" async defer></script>
   </body>
 </html>
+
+
+
+
+
