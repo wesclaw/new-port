@@ -8,24 +8,28 @@
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <nav class="navbar navbar-expand bg-body-tertiary">
       <div class="container">
         <a class="navbar-brand" href="#"><img src="images/logo-icon.png" class="logo"></a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <button class="navbar-toggler" type="button" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse text-center" id="navbarNavAltMarkup">
           <div class="navbar-nav ms-auto">
-            <!-- <a class="nav-link active" aria-current="page" href="#">Home</a> -->
-            <a class="nav-link" href="#">Projects</a>
-            <a class="nav-link" href="https://github.com/wesclaw"  target="_blank"><img src="images/github.png" class="github-icon"></a>
+            <!-- <a class="nav-link" href="#">Projects</a> -->
+            <a class="nav-link" href="https://github.com/wesclaw" target="_blank"><img src="images/github.png" class="github-icon"></a>
           </div>
         </div>
       </div>
     </nav>
+    
+    
     <section class="top" id="home">
       <div class="container home-section">
         <h2>Good morning, (name)</h2>
@@ -59,19 +63,19 @@
               <div class="line"></div>
               <p>Used the OpenAI API to fetch a recipe based on user inputs. Users can freely add items by clicking on an ingredient or using the search field.</p>
               <div class="a-tags">
-                <a href="" class="live-tag">Live</a>
-                <a href="" class="repo-tag">Repo</a>
+                <a href="https://www.freerecipemaker.com" class="live-tag" target="_blank">Live</a>
+                <a href="https://github.com/wesclaw/Recipe-Builder" class="repo-tag" target="_blank">Repo</a>
               </div>     
             </div>
             <div class="right-side">
-              <a href="">
+              <a href="https://www.freerecipemaker.com" target="_blank">
                 <img src="images/Animation.gif" alt="" class="gif">
               </a>
             </div>
           </div>
           <div class="project1 project2">
             <div class="right-side">
-              <a href="">
+              <a href="https://wesclaw.github.io/multitask-form/" target="_blank">
                 <img src="images/multitaskform.gif" alt="" class="gif">
               </a>
             </div>
@@ -85,8 +89,8 @@
               <div class="line"></div>
               <p>A multi task form with 5 steps. User picks monthly or yearly subscription with special add-ons if wanted.</p>
               <div class="a-tags">
-                <a href="" class="live-tag">Live</a>
-                <a href="" class="repo-tag">Repo</a>
+                <a href="https://wesclaw.github.io/multitask-form/" target="_blank" class="live-tag">Live</a>
+                <a href="https://github.com/wesclaw/multitask-form" target="_blank" class="repo-tag">Repo</a>
               </div>     
             </div>        
           </div>
@@ -100,6 +104,7 @@
     <section class="contact-me">
       <div class="container add-style">
         <h2 class="section-title" id="contact">Lets Build Together</h2>
+        <div class="line"></div>
         <form action="">
           <label for="fname">First Name</label>
           <input type="text" id="fname" name="firstname" placeholder="Your name..">

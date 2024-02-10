@@ -61,7 +61,8 @@ body {
 
 .home-section{
   color: ghostwhite;
-  font-family: sans-serif;
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.2rem;
 }
 
 .project1{
