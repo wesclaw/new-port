@@ -28,13 +28,49 @@
         </div>
       </div>
     </nav>
+
+
+
+    <!--  -->
+    <div class="card-wrapper">
+      <div class="card">
+        <div class="top-curve">
+          <button class="close-btn"><i class="fa-solid fa-x"></i></button>
+          
+          <h2 class="top-text">Thanks for stopping by!</h2>
+        </div>
+        <div class="section1-name">
+          <form class="form1" style="background-color: transparent;">
+            <h2 class="name-text">What's your name?</h2>
+            <input
+              type="text"
+              class="name-input"
+              placeholder="Name.."
+            />
+          </form>
+          <form class="form2" style="background-color: transparent">
+            <h2 class="name-text">Favorite color?</h2>
+            <input
+              type="text"
+              class="color-input"
+              placeholder="Favorite color.."
+            />
+          </form>
+        </div>
+      </div>
+    </div>
+    <!--  -->
+
+    <div class="changeThis"></div>
     
     
     <section class="top" id="home">
       <div class="container home-section">
-        <h2>Good morning, (name)</h2>
+        
+       <div class="wrapper-for-username"></div>
+
         <h1><span>From</span> School Teacher to Frontend Engineer</h1>
-        <p>Hello, I'm Wesley Knudson, a former school teacher turned frontend engineer with a genuine passion for crafting responsive JavaScript applications. Transitioning from the world of education to the dynamic field of web development has been an exhilarating journey for me.</p>
+        <p>Hello, I'm Wesley Knudson, a former school teacher turned frontend engineer with a genuine passion for crafting responsive <span class="js">JavaScript</span> applications. Transitioning from the world of education to the dynamic field of web development has been an exhilarating journey for me.</p>
         <p>I am eager to contribute my skills to projects that demand responsive and intuitive frontend solutions. Whether it's enhancing existing applications or building something entirely new, let's collaborate and create web experiences that leave a lasting impact.</p>
         <div class="contact-btn-container">
           <a href="#contact">
@@ -73,6 +109,7 @@
               </a>
             </div>
           </div>
+          <div class="line"></div>
           <div class="project1 project2">
             <div class="right-side">
               <a href="https://wesclaw.github.io/multitask-form/" target="_blank">
@@ -106,7 +143,7 @@
         <h2 class="section-title" id="contact">Lets Build Together</h2>
         <div class="line"></div>
         <form action="">
-          <label for="fname">First Name</label>
+          <label for="fname">Name</label>
           <input type="text" id="fname" name="firstname" placeholder="Your name..">
           <label for="email">Email</label>
           <input type="email" id="email" name="email" placeholder="Your email..">
@@ -120,7 +157,11 @@
         <p>&copy; 2024. All rights reserved.</p>
      </footer>
 
-   
+     
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Caprasimo&family=Mouse+Memoirs&display=swap" rel="stylesheet"/>
+    <script src="https://kit.fontawesome.com/c3790f8a44.js" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
     <script src="main.js" async defer></script>
