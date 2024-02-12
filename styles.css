@@ -4,11 +4,17 @@
   box-sizing: border-box;
 }
 
-body {
-	background-image: linear-gradient(-45deg, #5f75f1, #5b49bebb, #2492b9, #4c85cf);
-  /* background-image: linear-gradient(-45deg, #1c1e29, #231d418f, #182327, #161718); */
-	/* background-size: 400% 400%; 
+body{
+  background-image: linear-gradient(-45deg, #5f75f1, #5b49bebb, #2492b9, #4c85cf);
+  /* background-image: linear-gradient(-45deg, #1c1e29, #231d418f, #182327, #161718);
+	background-size: 400% 400%; 
 	animation: gradient 20s ease infinite; */
+}
+	
+.bg-color{
+  background-image: linear-gradient(-45deg, #1c1e29, #231d418f, #182327, #161718);
+	background-size: 400% 400%; 
+	animation: gradient 30s ease infinite;
 }
 
 @keyframes gradient {
@@ -23,11 +29,10 @@ body {
 	}
 }
 
-.changeThis{
+/* .changeThis{
   height: 5px;
   width: 5px;
   border-radius: 50%;
-  background-color: red;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -35,10 +40,10 @@ body {
   animation-timing-function: linear;
   animation-duration: 1s;
   animation-fill-mode: forwards;
-  /* z-index: -1; */
-}
+  z-index: -1;
+} */
 
-@keyframes change {
+/* @keyframes change {
   0% {
   height: 0vh; 
   width: 0vw;
@@ -54,7 +59,7 @@ body {
   width: 100vw;
   border-radius: 0%;
   }
-}
+} */
 
 .logo{
   width: 50px;

@@ -71,14 +71,13 @@ function createEffects(userName, favColor){
   }
   favColor.toLowerCase()
 
-  const changeThis = document.createElement('div')
-  changeThis.classList.add('changeThis')
-  changeThis.style.backgroundColor = favColor
-  if(favColor==='black'){
+  if(favColor==='black' || favColor==='grey' || favColor==='gray'){
+    body.style.background = 'linear-gradient(-45deg, #1c1e29, #231d418f, #182327, #161718)';
+    body.style.backgroundSize = '400% 400%';
+    body.style.animation = 'gradient 20s ease infinite';
+    body.style.animationDuration = '25s'
+  }else if(favColor==='red'){
 
-    // body.style.background = 'linear-gradient(-45deg, #1c1e29, #231d418f, #182327, #161718)';
-    // body.style.backgroundSize = '400% 400%';
-    // body.style.animation = 'gradient 20s ease infinite';
   }
 }
 
