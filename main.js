@@ -33,7 +33,9 @@ function formTwo(e){
   favColor = colorValue
   cardWrapper.remove()
   const fname = document.getElementById('fname')
-  fname.value = userName
+  const capitalizedUserName =
+  userName.charAt(0).toUpperCase() + userName.slice(1);
+  fname.value = capitalizedUserName
   createEffects(userName, favColor)
 }
 
@@ -77,7 +79,7 @@ function createEffects(userName, favColor){
     body.style.animation = 'gradient 20s ease infinite';
     body.style.animationDuration = '25s'
   }else if(favColor==='red'){
-
+    
   }
 }
 
