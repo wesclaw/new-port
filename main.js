@@ -83,6 +83,9 @@ function createEffects(userName, favColor){
   }
 }
 
+function thankYouPage(){
+  window.location.href = 'thankyou.html'
+}
 
 
 
