@@ -284,6 +284,7 @@ footer p{
   display: flex;
   justify-content: start;
   align-items: center;
+  flex-wrap: wrap;
 }
 
 .span_el {
@@ -329,7 +330,7 @@ footer p{
 
 @media (max-width: 1000px){
   body{
-    background-image: unset;
+    /* background-image: unset; */
     background-size: unset;
   }
   .section-title{
