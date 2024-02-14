@@ -70,9 +70,9 @@ function createEffects(userName, favColor){
       span_el.classList.remove('big');
     });
   }
-  favColor.toLowerCase()
+  const lowerCaseColor = favColor.toLowerCase()
 
-  if(favColor==='black' || favColor==='grey' || favColor==='gray'){
+  if(lowerCaseColor==='black' || lowerCaseColor==='grey' || lowerCaseColor==='gray'){
     body.style.background = 'linear-gradient(-45deg, #1c1e29, #231d418f, #182327, #161718)';
     body.style.backgroundSize = '400% 400%';
     body.style.animation = 'gradient 20s ease infinite';
@@ -81,16 +81,6 @@ function createEffects(userName, favColor){
     
   }
 }
-
-const bulb = document.querySelector('.bulb')
-
-const enlightenUs = () => {
-  bulb.style.width = '100%'
-} 
-
-
-enlightenUs()
-
 
 form1.addEventListener('submit', formOne);
 form2.addEventListener('submit', formTwo);
