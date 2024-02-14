@@ -78,7 +78,15 @@ function createEffects(userName, favColor){
     body.style.animation = 'gradient 20s ease infinite';
     body.style.animationDuration = '25s'
   }else if(favColor==='red'){
-    
+    body.style.background = 'linear-gradient(-45deg,#fd5c63,#df6972,#f74753, #92473b)';
+    body.style.backgroundSize = '400% 400%';
+    body.style.animation = 'gradient 20s ease infinite';
+    body.style.animationDuration = '25s'
+  }else if(favColor==='green'){
+    body.style.background = 'linear-gradient(-45deg,#aee28c,#7ce09e,#5bdf8d, #4bc770)';
+    body.style.backgroundSize = '400% 400%';
+    body.style.animation = 'gradient 20s ease infinite';
+    body.style.animationDuration = '25s'
   }
 }
 
