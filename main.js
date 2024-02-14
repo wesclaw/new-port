@@ -4,6 +4,8 @@ const form2 = document.querySelector('.form2');
 const colorInput = document.querySelector('.color-input');
 const cardWrapper = document.querySelector('.card-wrapper');
 
+const homeSection = document.querySelector('.home-section')
+
 let userName;
 let favColor;
 
@@ -84,6 +86,36 @@ function createEffects(userName, favColor){
     body.style.animationDuration = '25s'
   }else if(favColor==='green'){
     body.style.background = 'linear-gradient(-45deg,#aee28c,#7ce09e,#5bdf8d, #4bc770)';
+    body.style.backgroundSize = '400% 400%';
+    body.style.animation = 'gradient 20s ease infinite';
+    body.style.animationDuration = '25s'
+    homeSection.style.color = 'black'
+  }else if(favColor==='white'){
+    body.style.background = 'white';
+    homeSection.style.color = 'black'
+  }else if(favColor==='brown'){
+    body.style.background = 'linear-gradient(-45deg,brown,rgb(160, 88, 88), rgb(180, 83, 83), #be7562)';
+    body.style.backgroundSize = '400% 400%';
+    body.style.animation = 'gradient 20s ease infinite';
+    body.style.animationDuration = '25s'
+  }else if(favColor==='pink'){
+    body.style.background = 'linear-gradient(-45deg,#eb88d279,#e765e7,#eb72d7, #914f7d)';
+    body.style.backgroundSize = '400% 400%';
+    body.style.animation = 'gradient 20s ease infinite';
+    body.style.animationDuration = '25s'
+  }else if(favColor==='yellow'){
+    body.style.background = 'linear-gradient(-45deg,#e4e672,#e0f086,#e2f065, #d7ec79)';
+    body.style.backgroundSize = '400% 400%';
+    body.style.animation = 'gradient 20s ease infinite';
+    body.style.animationDuration = '25s'
+    homeSection.style.color = 'black'
+  }else if(favColor==='purple'){
+    body.style.background = 'linear-gradient(-45deg,#a085ec,#9b72c9,#9c60ce, #c565f1)';
+    body.style.backgroundSize = '400% 400%';
+    body.style.animation = 'gradient 20s ease infinite';
+    body.style.animationDuration = '25s'
+  }else if(favColor==='cyan'){
+    body.style.background = 'linear-gradient(-45deg,cyan,darkcyan,#79c6c9, #3fdaee)';
     body.style.backgroundSize = '400% 400%';
     body.style.animation = 'gradient 20s ease infinite';
     body.style.animationDuration = '25s'

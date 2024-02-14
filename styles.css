@@ -10,12 +10,6 @@ body{
 	animation: gradient 20s ease infinite;
 }
 	
-/* .bg-color{
-  background-image: linear-gradient(-45deg, #1c1e29, #231d418f, #182327, #161718);
-	background-size: 400% 400%; 
-	animation: gradient 30s ease infinite;
-} */
-
 @keyframes gradient {
 	0% {
 		background-position: 0% 50%;
@@ -44,38 +38,6 @@ body{
 .contact-btn-container{
   text-align: center;
 }
-
-/*  */
-
-/* .light {
-  width: 100vw; 
-  height: 5px;   
-}
-
-.light .bulb {
-  width: 0%;
-  background-color: rgb(101, 236, 101);    
-  height: 100%;
-  animation: neon-animation 1.5s linear infinite;
-  transition: .5s; 
-}
-
-@keyframes neon-animation {
-  0%,
-  100% {
-    box-shadow: 0 0 10px rgba(0, 255, 0, 1), 0 0 20px rgba(0, 255, 0, 1),
-      0 0 40px rgba(0, 255, 0, 1), 0 0 60px rgba(0, 255, 0, 1),
-      0 0 80px rgba(0, 255, 0, 1), 0 0 100px rgba(0, 255, 0, 1);
-  }
-  50% {
-    box-shadow: 0 0 10px rgba(0, 255, 0, 1), 0 0 20px rgba(0, 255, 0, 1),
-      0 0 40px rgba(0, 255, 0, 1), 0 0 60px rgba(0, 255, 0, 1),
-      0 0 80px rgba(0, 255, 0, 0.5), 0 0 100px rgba(0, 255, 0, 0.5);
-  }
-} */
-
-
-/*  */
 
 .contact-me-btn {
   appearance: button;
