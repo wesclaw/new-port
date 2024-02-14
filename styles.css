@@ -46,18 +46,86 @@ body{
   text-align: center;
 }
 
-.contact-me-btn{
-  padding: 40px 20px;
-  border-radius: 50%;
-  box-shadow: 2px 12px 0px rgba(0, 0, 0, 0.74);
-  text-transform: uppercase;
-  color: black;
-  font-weight: 800;
+/*  */
+
+.light {
+  width: 100vw; 
+  height: 5px;   
 }
 
-.contact-me-btn:active{
-  box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.74);
-  transform: translateY(10px);
+.light .bulb {
+  width: 0%;
+  background-color: rgb(101, 236, 101);    
+  height: 100%;
+  animation: neon-animation 1.5s linear infinite;
+  transition: .5s; 
+}
+
+@keyframes neon-animation {
+  0%,
+  100% {
+    box-shadow: 0 0 10px rgba(0, 255, 0, 1), 0 0 20px rgba(0, 255, 0, 1),
+      0 0 40px rgba(0, 255, 0, 1), 0 0 60px rgba(0, 255, 0, 1),
+      0 0 80px rgba(0, 255, 0, 1), 0 0 100px rgba(0, 255, 0, 1);
+  }
+  50% {
+    box-shadow: 0 0 10px rgba(0, 255, 0, 1), 0 0 20px rgba(0, 255, 0, 1),
+      0 0 40px rgba(0, 255, 0, 1), 0 0 60px rgba(0, 255, 0, 1),
+      0 0 80px rgba(0, 255, 0, 0.5), 0 0 100px rgba(0, 255, 0, 0.5);
+  }
+}
+
+
+/*  */
+
+.contact-me-btn {
+  appearance: button;
+  border: solid transparent;
+  border-radius: 16px;
+  border-width: 0 0 4px;
+  box-sizing: border-box;
+  color: black;
+  cursor: pointer;
+  display: inline-block;
+  font-family: din-round,sans-serif;
+  font-size: 15px;
+  font-weight: 700;
+  letter-spacing: .8px;
+  line-height: 20px;
+  margin: 0;
+  outline: none;
+  overflow: visible;
+  padding: 13px 16px;
+  text-align: center;
+  text-transform: uppercase;
+  touch-action: manipulation;
+  transform: translateZ(0);
+  transition: filter .2s;
+  user-select: none;
+  -webkit-user-select: none;
+  vertical-align: middle;
+  white-space: nowrap;
+  width: 100%;
+}
+
+.contact-me-btn:after {
+  background-clip: padding-box;
+  background-color: white;
+  border: solid transparent;
+  border-radius: 16px;
+  border-width: 0 0 4px;
+  bottom: -4px;
+  content: "";
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: -1;
+}
+
+.contact-me-btn:active {
+  border-width: 4px 0 0;
+  background: none;
 }
 
 .section-title{
@@ -311,7 +379,6 @@ footer p{
 }
 
 .close-btn:hover{
-  /* border: 1px dashed rgba(0, 0, 0, 0.329); */
   background-color: ghostwhite;
   color: black;
 }
@@ -330,16 +397,12 @@ footer p{
 
 @media (max-width: 1000px){
   body{
-    /* background-image: unset; */
     background-size: unset;
   }
   .section-title{
     font-size: 2rem;
     text-transform: uppercase;
     text-align: center;
-  }
-  .home-section{
-    color: black;
   }
   .project1{
     display: flex;
@@ -355,7 +418,5 @@ footer p{
    display: flex;
    justify-content: center;
   }
-  .hold-span-tags{
-    color: black !important;
-  }
+  
 }

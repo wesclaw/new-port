@@ -11,7 +11,6 @@ const date = new Date();
 const h = date.getHours();
 const wrapperForUserName = document.querySelector('.wrapper-for-username')
 const closeBtn = document.querySelector('.close-btn')
-
 const body = document.querySelector('body')
 
 closeBtn.addEventListener("click", e=>{
@@ -83,10 +82,14 @@ function createEffects(userName, favColor){
   }
 }
 
-function thankYouPage(){
-  window.location.href = 'thankyou.html'
-}
+const bulb = document.querySelector('.bulb')
 
+const enlightenUs = () => {
+  bulb.style.width = '100%'
+} 
+
+
+enlightenUs()
 
 
 form1.addEventListener('submit', formOne);
