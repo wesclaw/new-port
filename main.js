@@ -119,6 +119,11 @@ function createEffects(userName, favColor){
     body.style.backgroundSize = '400% 400%';
     body.style.animation = 'gradient 20s ease infinite';
     body.style.animationDuration = '25s'
+  }else if(lowerCaseColor==='orange'){
+    // body.style.background = 'linear-gradient(-45deg,cyan,darkcyan,#79c6c9, #3fdaee)';
+    body.style.backgroundSize = '400% 400%';
+    body.style.animation = 'gradient 20s ease infinite';
+    body.style.animationDuration = '25s'
   }
   // orange?
 }
