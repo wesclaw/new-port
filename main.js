@@ -3,8 +3,8 @@ const nameInput = document.querySelector('.name-input');
 const form2 = document.querySelector('.form2');
 const colorInput = document.querySelector('.color-input');
 const cardWrapper = document.querySelector('.card-wrapper');
-
-const homeSection = document.querySelector('.home-section')
+const homeSection = document.querySelector('.home-section');
+const copyright_text = document.querySelector('.copyright-text')
 
 let userName;
 let favColor;
@@ -104,11 +104,12 @@ function createEffects(userName, favColor){
     body.style.animation = 'gradient 20s ease infinite';
     body.style.animationDuration = '25s'
   }else if(lowerCaseColor==='yellow'){
-    body.style.background = 'linear-gradient(-45deg,#e4e672,#e0f086,#e2f065, #d7ec79)';
+    body.style.background = 'linear-gradient(-45deg, rgb(238, 238, 85), rgb(226, 226, 73), rgb(226, 226, 114), rgb(236, 236, 27))';
     body.style.backgroundSize = '400% 400%';
     body.style.animation = 'gradient 20s ease infinite';
     body.style.animationDuration = '25s'
     homeSection.style.color = 'black'
+    copyright_text.style.color = 'black'
   }else if(lowerCaseColor==='purple'){
     body.style.background = 'linear-gradient(-45deg,#a085ec,#9b72c9,#9c60ce, #c565f1)';
     body.style.backgroundSize = '400% 400%';
@@ -120,12 +121,11 @@ function createEffects(userName, favColor){
     body.style.animation = 'gradient 20s ease infinite';
     body.style.animationDuration = '25s'
   }else if(lowerCaseColor==='orange'){
-    // body.style.background = 'linear-gradient(-45deg,cyan,darkcyan,#79c6c9, #3fdaee)';
+    body.style.background = 'linear-gradient(-45deg, rgba(255, 166, 0, 0.863), rgb(230, 186, 105), rgb(235, 180, 80), orange';
     body.style.backgroundSize = '400% 400%';
     body.style.animation = 'gradient 20s ease infinite';
     body.style.animationDuration = '25s'
   }
-  // orange?
 }
 
 form1.addEventListener('submit', formOne);

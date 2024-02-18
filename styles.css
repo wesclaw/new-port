@@ -179,6 +179,15 @@ h4{
   padding: 2px 7px;
 }
 
+.bootstrap{
+  background-image: linear-gradient(-90deg, #6610f2, #6f42c1);
+  width: 100px;
+  height: 100px;
+  font-weight: bold;
+  padding: 2px 7px;
+  color: white;
+}
+
 .node{
   background-color: #3c873a;
   color: ghostwhite;
@@ -257,7 +266,6 @@ footer p{
 
 .card-wrapper{
   display: flex;
-  /* display: none; */
   justify-content: center;
   align-items: center;
   height: 100vh;
@@ -277,6 +285,18 @@ footer p{
 
 .top-curve{
   width: 100%;
+  /* height: 110px; */
+  border-bottom-left-radius:50%;
+  border-bottom-right-radius: 50%;
+  background-image: linear-gradient(90deg, cyan, rgb(64, 156, 209));
+  box-shadow: 0px 5px 0px rgba(36, 176, 219, 0.308);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.top-curve{
+  width: 100%;
   height: 110px;
   border-bottom-left-radius:50%;
   border-bottom-right-radius: 50%;
@@ -285,6 +305,7 @@ footer p{
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
 }
 
 .top-text{
