@@ -265,8 +265,8 @@ footer p{
 }
 
 .card-wrapper{
-  /* display: flex; */
-  display: none;
+  display: flex;
+  /* display: none; */
   justify-content: center;
   align-items: center;
   height: 100vh;
