@@ -6,6 +6,8 @@ const cardWrapper = document.querySelector('.card-wrapper');
 const homeSection = document.querySelector('.home-section');
 const copyright_text = document.querySelector('.copyright-text')
 
+const private_repo_tag = document.querySelectorAll('.private_repo_tag')
+
 let userName;
 let favColor;
 
@@ -127,6 +129,12 @@ function createEffects(userName, favColor){
     body.style.animationDuration = '25s'
   }
 }
+
+private_repo_tag.forEach((link)=>{
+  link.addEventListener('click', e=>{
+    alert("This is a private repo:) Please contact me directly if you'd like to view it Email: wdknud@gmail.com")
+  })
+})
 
 form1.addEventListener('submit', formOne);
 form2.addEventListener('submit', formTwo);
