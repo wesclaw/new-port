@@ -165,6 +165,20 @@ h4{
  padding: 2px 7px;
 }
 
+.sql{
+  background-color: #00758f;
+  font-weight: bold;
+  padding: 2px 7px;
+  color:  #f29111;
+}
+
+.php{
+  font-weight: bold;
+  padding: 2px 7px;
+  color:  #232531;
+  background-color: #8993be;
+}
+
 .css{
   background-color: #3C99DC;
   color: ghostwhite;
